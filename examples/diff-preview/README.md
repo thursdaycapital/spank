@@ -18,6 +18,10 @@ node examples/diff-preview/app.js
 
 Or open `index.html` in a browser to see the tiny preview page.
 
+## Second-pass edits
+
+This demo now includes a slightly richer impact table, a sample counter in the HTML, and extra CSS pills so modified-file diffs are more obvious than a whisper in a wind tunnel.
+
 ## Why this exists
 
 The main project is a Go CLI. This example intentionally uses frontend-ish files so GitHub can show several syntax-highlighted diff types in one compact change. Basically: a diff snack platter, not a seven-course refactor.

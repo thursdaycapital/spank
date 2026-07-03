@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 24px;
   background:
     radial-gradient(circle at 20% 20%, rgba(244, 114, 182, 0.32), transparent 30%),
     radial-gradient(circle at 80% 10%, rgba(251, 146, 60, 0.24), transparent 26%),
@@ -23,6 +24,22 @@ body {
   border-radius: 28px;
   background: rgba(24, 24, 27, 0.78);
   box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+}
+
+.demo-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.demo-pill {
+  padding: 8px 12px;
+  border: 1px solid rgba(253, 186, 116, 0.35);
+  border-radius: 999px;
+  background: rgba(253, 186, 116, 0.12);
+  color: #fed7aa;
+  font-size: 0.9rem;
 }
 
 .demo-eyebrow {
@@ -44,4 +61,10 @@ pre {
   padding: 18px;
   border-radius: 18px;
   background: rgba(0, 0, 0, 0.34);
+}
+
+.demo-footnote {
+  margin: 16px 0 0;
+  color: rgba(255, 247, 237, 0.72);
+  font-size: 0.95rem;
 }
