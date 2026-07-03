@@ -1,11 +1,13 @@
 export type ImpactLabel = 'ignored' | 'tap noticed' | 'SPANK DETECTED';
 export type ImpactSeverity = 'quiet' | 'medium' | 'maximum-drama';
+export type ImpactEmoji = '🤫' | '👋' | '💥';
 
 export interface ImpactSample {
   label: string;
   amplitude: number;
   timestampMs: number;
   source?: string;
+  emoji?: ImpactEmoji;
 }
 
 export interface DemoMode {
@@ -32,4 +34,10 @@ export function impactSeverity(sample: ImpactSample): ImpactSeverity {
   if (sample.amplitude >= 0.3) return 'maximum-drama';
   if (sample.amplitude >= 0.05) return 'medium';
   return 'quiet';
+}
+
+export function impactEmoji(sample: ImpactSample): ImpactEmoji {
+  if (sample.amplitude >= 0.3) return '💥';
+  if (sample.amplitude >= 0.05) return '👋';
+  return '🤫';
 }
